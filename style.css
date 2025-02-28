@@ -589,7 +589,6 @@ section .title::after {
   background-position: center; /* Centrer l'image */
   transition: all 1s ease-out;
   background-color: var(--main-bg-color); /* Couleur de fond de base */
-  width: 100%;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -597,13 +596,14 @@ section .title::after {
   padding-bottom: 50px;
 }
 
-.am-slide {
+
+.am-slide{
+  flex-direction: column;
   display: flex;
   justify-content: start;
-
-  
-  }
-  
+  width: 1000px;
+} 
+ 
   .am-slider {
   background-size: cover;
   cursor: pointer;
@@ -682,28 +682,24 @@ section .title::after {
     }
   
   .am-slider[for="a1"] {
-  background-image: url('images/bh.png');
+  background-image: url('img/renov.jpg');
   }
   .am-slider[for="a2"] {
-  background-image: url('images/banner.png');
+  background-image: url('img/Renov1.jpg');
   }
   .am-slider[for="a3"] {
-  background-image: url('images/vg.png');
+  background-image: url('img/Renov2.webp');
   }
   .am-slider[for="a4"] {
-  background-image: url('images/vv.png');
+  background-image: url('img/Renov3.webp');
   }
   .am-slider[for="a5"] {
-  background-image: url('images/vf.png');
+  background-image: url('img/Renov4.jpg');
   }
   .am-slider[for="a6"] {
-  background-image: url('images/fd.png');
+  background-image: url('img/Renov5.jpg');
   }
 
-  .am-slide{
-    flex-direction: column;
-    width: 100%;
-  } 
   .max-width {
     padding: 0 50px;
   }
@@ -716,10 +712,9 @@ section .title::after {
 
 
   .accordian {
-    width: 805px; height: 320px;
+    width: 805px; 
+    height: 320px;
     overflow: hidden;
-    
-    /*Time for some styling*/
     margin: 100px auto;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -1369,10 +1364,25 @@ ul {
     margin-bottom: 5px;
   }
 
+  .am-slide{
+    width: 100%;
+  } 
+   
+
+  
+
  
 }
 
 @media (max-width: 991px) {
+
+  .home-section .serv-content .left-image2{
+    right: 0px;
+  }
+
+  .home-section .serv-content .left.items .left-image2{
+    right: 0px;
+  }
 
   .navbar .max-width .logo a img:nth-child(2) {
     display:none;
@@ -1441,6 +1451,10 @@ ul {
 }
 
 @media (max-width: 947px) {
+
+  .left{
+    gap: 20px;
+  }
   .menu-btn {
     display: block;
     z-index: 999;
