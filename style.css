@@ -4,7 +4,7 @@
   --main-bg-color: #ecddc6;
   --second-color: #c8ad7f;
   --third-color: #e1c699;
-  --fourth-color: #5b3c11;
+  --fourth-color: black;
 
 }
 
@@ -405,10 +405,8 @@ section .title::after {
   display: flex;
   height: 100vh;
   color: var(--third-color);
-  min-height: 500px;
   position: relative;
-  
-  
+
 }
 
 .home::before{
@@ -430,6 +428,9 @@ section .title::after {
 .home .max-width {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .home .home-content{
@@ -458,7 +459,7 @@ section .title::after {
 .home .home-content a {
   display: inline-block;
   background: var(--main-bg-color);
-  color: #fff;
+  color: var(--fourth-color);
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
@@ -494,7 +495,8 @@ section .title::after {
   gap: 20px;
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"%3E%3Cpath fill="none" stroke="%23ecddc6" stroke-width="4" stroke-linecap="round" d="M0 50 Q 120 0, 240 50 T 480 50 T 720 50 T 960 50 T 1200 50 T 1440 50" /%3E%3Cpath fill="none" stroke="%23c8ad7f" stroke-width="3" stroke-linecap="round" d="M0 70 Q 120 20, 240 70 T 480 70 T 720 70 T 960 70 T 1200 70 T 1440 70" /%3E%3Cpath fill="none" stroke="%23e1c699" stroke-width="2" stroke-linecap="round" d="M0 30 Q 120 80, 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30" /%3E%3C/svg%3E');
   background-size: cover; /* Couvrir toute la page */
-  background-repeat: repeat
+  background-repeat: repeat; 
+  padding-top: 20px;
 }
 
 .home-section .serv-content{
@@ -514,11 +516,31 @@ section .title::after {
   flex-direction: row-reverse;
 }
 
-.home-section .serv-content .left p{
-  padding: 0px;
-  font-size: xx-large;
+.home-section .serv-content .left .l-text p{
+  padding-bottom: 8px;
+  font-size:larger; 
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--second-color);
 }
 
+.home-section .serv-content .left .l-text p span{
+  color: var(--second-color);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.home-section .serv-content .left .l-text h4{
+  padding: 0px;
+  font-size: xx-large;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--fourth-color);
+}
+
+.home-section .serv-content .left .l-text ul {
+  position: relative;
+}
 
 
 .home-section .serv-content .left img {
@@ -689,6 +711,73 @@ section .title::after {
   .slide{
     flex-direction: column;
     width: 100%;
+  }
+
+
+
+  .accordian {
+    width: 805px; height: 320px;
+    overflow: hidden;
+    
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  }
+  
+  /*A small hack to prevent flickering on some browsers*/
+  .accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    
+    border-left: 1px solid #888;
+    
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+    see the basic accordian*/
+  }
+  
+  /*Reduce with of un-hovered elements*/
+  .accordian ul:hover li {width: 40px;}
+  /*Lets apply hover effects now*/
+  /*The LI hover style should override the UL hover style*/
+  .accordian ul li:hover {width: 640px;}
+  
+  
+  .accordian li img {
+    display: block;
+  }
+  
+  /*Image title styles*/
+  .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;	
+  width: 640px;	
+  
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
   }
 
 
@@ -1265,15 +1354,21 @@ ul {
   .articles .articlesl .tab-button{
     padding: 20px
   }
-
   .left{
-    
+    flex-direction: column;
   }
+
+  .home-section .serv-content .left.items {
+    flex-direction: column;
+  }
+  
 }
+
 @media (max-width: 1050px) {
   .title {
     margin-bottom: 5px;
   }
+
  
 }
 
