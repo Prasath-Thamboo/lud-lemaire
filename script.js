@@ -44,7 +44,7 @@ $(document).ready(function(){
     //strings: ["Conseils pour PME", "Gestion de projet", "Installation d'outils modernes"]
     // typing text animation script
     var typed = new Typed(".typing", {
-      strings : ["Advice for SMEs", "Project management", "Installation of modern tools"],
+      strings : ["Aménagement de combles", "Rénovation intérieure", "Rénovation extérieure"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
@@ -106,8 +106,8 @@ tabButtons.forEach(button => {
 
 
 
-var copy = document.querySelector(".logos-slide").cloneNode(true);
-document.querySelector(".logos").appendChild(copy);
+//var copy = document.querySelector(".logos-slide").cloneNode(true);
+//document.querySelector(".logos").appendChild(copy);
 
 
 
