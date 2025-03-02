@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ludovic - Rénovateur intérieur et extérieur">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Navilone - Mentions Légales">
-    <title>Navilone - Mentions légales</title>
+    <title>Ludovic - Rénovateur intérieur et extérieur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
@@ -13,51 +13,59 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <link rel="shortcut icon" href="images/logoNavilone.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="img/logo ludo.png" type="image/x-icon">
+
 </head>
 <body>
 
-     <!----------------------------------           cookie section and contact button             ------------------------------------->
 
-    
-     <div class="contact-button">
-        <div class="contact-button-contain">
-        <a href="tel:+33184754535" class="call-button"><i class="fas fa-phone"></i></a>
-        <a href="mailto:contact@navilone.com" class="email-button"><i class="fas fa-envelope"></i></a>
+
+    <!----------------------------------           cookie section and contact button             ------------------------------------->
+
+    <section class="cook" id="cookie-banner">
+        <div class="bandeau">
+            <div class="band-t">
+                Nous utilisons des cookies pour une expérience utilisateur de meilleure qualité. Il faut accepter ci-dessous pour continuer sur notre site. 
+            </div>
+            <div class="band-button">
+                <button id="accept-cookies">Accepter</button>
+                <a href="politique.html"><button>Plus d'informations ici</button></a>
+            </div>
         </div>
+    </section>
+
+    <div class="contact-button">
+      <div class="contact-button-contain">
+      <a href="tel:+33184754535" class="call-button"><i class="fas fa-phone"></i></a>
+      <a href="mailto:contact@Ludovic - Rénovateur intérieur et extérieu.com" class="email-button"><i class="fas fa-envelope"></i></a>
       </div>
-  
-      <div class="scroll-up-btn">
-          <i class="fas fa-angle-up"></i>
-      </div>
-  
-  
-      <!----------------------------------           Navbar section             ------------------------------------->
-  
-  
-  
-      <nav class="navbar">
-          <div class="max-width">
-              <div class="logo"><a href="index.html"><img src="images/Navilone_logo_écriture.png" alt="logo" ><img src="images/Navilone_logo.png" alt="logo"></a></div>
-              <ul class="menu">
-                  <li><a href="https://navilone.com/#home" class="menu-btn" id="homee"><i class="fas fa-home"></i></a></li>
-                  <li><a href="https://navilone.com/#apropos" class="menu-btn" id="about"></a></li>
-                  <li><a href="https://navilone.com/#articles" class="menu-btn" id="news"></a></li>
-                  <li><a href="https://navilone.com/#services" class="menu-btn">Services</a></li>
-                  <li><a href="https://navilone.com/#contact" class="menu-btn">Contact</a></li>
-              </ul>
-              <div class="menu-btn">
-                  <i class="fas fa-bars"></i>
-              </div>
-  
-              <div class ="trad-button">
-                  <button id="switchToEnglish" class="flag-button" onclick="setLanguage('en')"> 🇬🇧 EN</button>
-                  <button id="switchToFrench" class="flag-button" onclick="setLanguage('fr')">🇫🇷 FR</button>
-              </div>
-          
-          </div>
-      </nav>
+    </div>
+
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+    <!----------------------------------           Navbar section             ------------------------------------->
+
+
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Accueil</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#apropos" class="menu-btn">A propos</a></li>
+                <li><a href="#blog" class="menu-btn">Blogs</a></li>
+                <li><a href="#projet" class="menu-btn">Projets</a></li>
+                <li><a href="#contaact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -127,32 +135,31 @@
         <div class="containeer">
             <div class="row">
                 <div class="footer-col">
-                    <div class="img"><img src="images/Navilone_logo.png" alt="logo"><img src="images/Navilone_logo_écriture.png" alt="logo"></div>
+                    <div class="img"><img src="img/logo.png" alt="logo"></div>
                     <p id="foo1"></p> </br> </br> 
                     <div class="social-links">
-                        <a href="https://fr.linkedin.com/company/navilone"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://fr.linkedin.com/company/Ludovic"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 id="footitle1"></h4>
+                    <h4 id="footitle1">Menu</h4>
                     <ul class="menu">
-                        <li><a href="https://navilone.com/#home" class="menu-btn" id="homeee"><i class="fas fa-home"></i></a></li>
-                        <li><a href="https://navilone.com/#apropos" class="menu-btn" id="aboute"></a></li>
-                        <li><a href="https://navilone.com/#articles" class="menu-btn" id="newss"></a></li>
-                        <li><a href="https://navilone.com/#services" class="menu-btn">Services</a></li>
-                        <li><a href="https://navilone.com/#contact" class="menu-btn">Contact</a></li>
+                        <li><a href="#home" class="menu-btn"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#apropos" class="menu-btn" id="aboute">A propos</a></li>
+                        <li><a href="#articles" class="menu-btn" id="newss">Blog</a></li>
+                        <li><a href="#services" class="menu-btn">Services</a></li>
+                        <li><a href="#contact" class="menu-btn">Contact</a></li>
                    </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 id="footitle2"></h4>
+                    <h4 id="footitle2">Liens importants</h4>
                     <ul>
-                        <li><a href="mention.html" id="foo2"></a></li>
-                        <li><a href="politique.html" id="foo3"></a></li>
+                        <li><a href="mention.html" id="foo2">Mention légale</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 id="footitle3"></h4>
-                    <p>NAVILONE</p>
+                    <h4 id="footitle3"> Copyright 2025</h4>
+                    <p>LUDOVIC LEMAIRE</p>
                 </div>
             </div>
         </div>

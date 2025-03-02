@@ -627,7 +627,7 @@ section .title::after {
   padding: 10px 0 10px 0;
   width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  height: 40%;
+  height: 51%;
   }
 
   .am-slider:hover {
@@ -719,6 +719,51 @@ section .title::after {
     flex-direction: column;
     width: 100%;
   }
+
+
+
+
+
+.hero{ 
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.hero-img-box{ 
+    width: 50%;
+}
+
+.hero-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.hero-content{
+    width: 50%;
+    max-height: fit-content;
+    background: var(--background-dark-80);
+    padding: 80px;
+    display: table;
+}
+
+.hero-content-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero-content .title{
+    font-size: var(--font-size-14);
+    color: var(--color-white-60);
+}
+
+.hero-content .description{ margin-bottom: 20px;}
+
+.hero-content .description p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
 
 
 
@@ -825,6 +870,65 @@ section .title::after {
 }
 
 
+/**********************************************Galerie************************************/
+
+
+
+.card-image {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+}
+
+.card-image > img {
+	display: block;
+	width: 100%;
+}
+
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.card-description > p {
+	margin: 0;
+}
+
+/****************************************Contact*****************************/
 
 
 .circle {
@@ -1370,6 +1474,25 @@ ul {
 
 @media (max-width: 991px) {
 
+  .hero-img-box{ 
+    width: 100%;
+}
+.hero-content{
+    width: 100%;
+    padding: 20px;
+}
+
+.hero-content .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-wrapper{
+  text-align: center;
+}
+
   .home-section .serv-content .left-image2{
     right: 0px;
   }
@@ -1446,6 +1569,14 @@ ul {
 
 @media (max-width: 947px) {
 
+  .am-description h4 {
+    font-size: 10px;
+  }
+
+  .am-description p{
+    font-size: 7px;
+  }
+
   .left{
     gap: 20px;
   }
@@ -1464,7 +1595,7 @@ ul {
     width: 100%;
     left: -100%;
     top: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     text-align: center;
     padding-top: 80px;
@@ -1668,6 +1799,11 @@ ul {
 }
 
 @media (max-width: 500px) {
+
+  
+  .am-slider > .am-line{
+    height: 53%;
+  }
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -1697,5 +1833,8 @@ ul {
   }
   .slider > .line > .description{
     width: 327px
+  }
+  .home-section .serv-content .left-image1{
+    width: 100%;
   }
 }
