@@ -347,7 +347,7 @@ section .title::after {
 
 
 .menu-btn {
-  color: var(--main-bg-color);
+  color: var(--fifth-color);
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -367,7 +367,7 @@ section .title::after {
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color: #fff;
+  color: var(--fifth-color);
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
@@ -579,7 +579,7 @@ section .title::after {
 }
 
 
-/****************************         articles styling             *******************************/
+/***************************************************************** articles styling  ******************************************************************************/
 
 
 .article-mobile{
@@ -627,6 +627,7 @@ section .title::after {
   padding: 10px 0 10px 0;
   width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 40%;
   }
 
   .am-slider:hover {
@@ -648,7 +649,7 @@ section .title::after {
   .am-description p {
   color: var(--fourth-color);
   padding-top: 5px;
-  font-size: 10px;
+  font-size: 15px;
   height: 0;
   opacity: 0;
 
@@ -656,7 +657,7 @@ section .title::after {
   
   .am-description h4 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
   }
   
   .article-mobile .am-slide input {
@@ -1180,17 +1181,11 @@ ul {
   width: 25%;
   padding: 0 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-col p::before {
-  content: "";
-  right: 44%;
-  bottom: -10px;
-  background-color: var(--main-bg-color);
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
 
 .footer-col h4 {
   font-size: 18px;
@@ -1199,18 +1194,8 @@ ul {
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
-  border-bottom: 2px solid var(--second-color)
-}
-
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  right: 50%;
-  bottom: -10px;
-  background-color: var(--main-bg-color);
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+  border-bottom: 2px solid var(--second-color);
+  text-align: center;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -1625,6 +1610,7 @@ ul {
   .services .serv-content .card {
     width: 100%;
   }
+
 }
 
 @media (max-width: 550px) {
@@ -1672,6 +1658,12 @@ ul {
 
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+
+  
+  .home-section{
+    padding: 20px;
+    width: 100%;
   }
 }
 
