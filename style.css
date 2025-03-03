@@ -86,20 +86,23 @@ html {
 /********************************************************************** CONTACT-button ***********************************************************************/
 
 
-.contact-button-contain {
+.contact-button{
   position: fixed;
-  top: 50%;
+  bottom: 50%;
   right: 20px; /* Ajout de la position à droite */
-  display: flex;
-  flex-direction: column;
   background: var(--main-bg-color);
-  padding: 20px;
   border-radius: 20px;
   color: var(--second-color);
   z-index: 5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border: 7px double var(--fifth-color);
+  border: 2px solid var(--fifth-color);
   transition: transform 0.3s ease; /* Ajout d'une transition pour un effet de survol */
+}
+
+.contact-button-contain{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-button-contain:hover a{
@@ -133,10 +136,6 @@ html {
 .contact-button-contain a i {
   width: 20px;
   font-size: 20px; /* Ajustement de la taille de l'icône */
-}
-
-.contact-button img {
-  display: none;
 }
 
 
@@ -1523,29 +1522,17 @@ ul {
   }
   
   .contact-button{
-    position: relative; 
-    display: flex;
-    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+    width: 350px;
     
   }
 
   .contact-button-contain{
-    bottom: 0;
-    width: 80%;
-    top: 92%;
     flex-direction: row;
     justify-content: space-around;
-    left: 10px; 
-    max-width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .contact-button img{
-    display: block;
-    position: absolute;
-
   }
 
   .row{
@@ -1835,6 +1822,6 @@ ul {
     width: 327px
   }
   .home-section .serv-content .left-image1{
-    width: 100%;
+    width: 80%;
   }
 }
