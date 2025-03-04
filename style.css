@@ -686,7 +686,7 @@ section .title::after {
 
   .article-mobile .am-slide input:checked + label .am-line .am-description p  {
     opacity: 1;
-    height: 50px;
+    height: 100px;
     
     }
   
@@ -739,38 +739,64 @@ section .title::after {
     object-position: center 0;
   }
 
-  .hero-content{
+  .hero-content {
     width: 50%;
     max-height: fit-content;
-    background: var(--background-dark-80);
+    background: var(--second-color);
     padding: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     display: table;
   }
-
-  .hero-content-wrapper{
+  
+  .hero-content-wrapper {
     display: table-cell;
     vertical-align: middle;
   }
-
-  .hero-content .title{
-    font-size: var(--font-size-14);
-    color: var(--color-white-60);
+  
+  .hero-content .title {
+    font-size: 18px;
+    color: var(--fifth-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
   }
-
-  .hero-content .description{ 
+  
+  .hero-content .name {
+    font-size: 32px;
+    color: var(--primary-color);
     margin-bottom: 20px;
   }
-
-  .hero-content .description p {
-    margin-bottom: 10px;
-    text-align: justify;
+  
+  .hero-content .description {
+    margin-bottom: 20px;
   }
-
+  
   .hero-content .description p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: justify;
+    line-height: 1.6;
   }
-
+  
+  .hero-content .description p span {
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+  
+  .hero-content .description .intro {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .description .conclusion {
+    text-align: center;
+    font-style: italic;
+    color: var(--fifth-color);
+  }
+  
 
 /********************************************        contact styling          *******************************************/
 
