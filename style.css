@@ -578,6 +578,90 @@ section .title::after {
 }
 
 
+
+
+
+/*****************************************************************A propos section **********************************************************************/
+
+
+  .hero{ 
+    display: flex; 
+    flex-wrap: wrap;
+  }
+
+  .hero-img-box{ 
+    width: 50%;
+  }
+
+  .hero-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+  }
+
+  .hero-content {
+    width: 50%;
+    max-height: fit-content;
+    background: var(--second-color);
+    padding: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: table;
+  }
+  
+  .hero-content-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .hero-content .title {
+    font-size: 18px;
+    color: var(--fifth-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content .name {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .description {
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .description p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .hero-content .description ul li span {
+      color: var(--fourth-color);
+      font-weight: 700;
+    }
+
+  .hero-content .description ul li {
+   padding-bottom: 37px;
+  }
+  
+  .hero-content .description .intro {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .description .conclusion {
+    text-align: center;
+    font-style: italic;
+    color: var(--fifth-color);
+  }
+
+
 /***************************************************************** articles styling  ******************************************************************************/
 
 
@@ -618,7 +702,7 @@ section .title::after {
   }
   
   .am-slider > .am-line {
-  color: white;
+  color: var(--fifth-color);
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -717,86 +801,72 @@ section .title::after {
     flex-direction: column;
     width: 100%;
   }
+  
 
 
 
-/******************************Galerie photos *********************************/
+
+/**********************************************Galerie************************************/
 
 
-  .hero{ 
-    display: flex; 
-    flex-wrap: wrap;
-  }
 
-  .hero-img-box{ 
-    width: 50%;
-  }
+.card-image {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: var(--fourth-color) center center no-repeat;
+	background-size: cover;
+}
 
-  .hero-img-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 0;
-  }
+.card-image > img {
+	display: block;
+	width: 100%;
+}
 
-  .hero-content {
-    width: 50%;
-    max-height: fit-content;
-    background: var(--second-color);
-    padding: 80px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: table;
-  }
-  
-  .hero-content-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
-  .hero-content .title {
-    font-size: 18px;
-    color: var(--fifth-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content .name {
-    font-size: 32px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
-  
-  .hero-content .description {
-    margin-bottom: 20px;
-  }
-  
-  .hero-content .description p {
-    margin-bottom: 15px;
-    text-align: justify;
-    line-height: 1.6;
-  }
-  
-  .hero-content .description p span {
-    font-weight: 700;
-    color: var(--accent-color);
-  }
-  
-  .hero-content .description .intro {
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--fourth-color);
-    margin-bottom: 20px;
-  }
-  
-  .hero-content .description .conclusion {
-    text-align: center;
-    font-style: italic;
-    color: var(--fifth-color);
-  }
-  
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+  border-radius: 20px;
+  cursor: pointer;
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.card-description > p {
+	margin: 0;
+}
+
+/****************************************Contact*****************************/
 
 /********************************************        contact styling          *******************************************/
 
@@ -837,68 +907,6 @@ section .title::after {
 .contact-form form .title-contact{
   color: var(--second-color)
 }
-
-
-/**********************************************Galerie************************************/
-
-
-
-.card-image {
-	display: block;
-	min-height: 20rem; /* layout hack */
-	background: #fff center center no-repeat;
-	background-size: cover;
-}
-
-.card-image > img {
-	display: block;
-	width: 100%;
-}
-
-
-.card-list {
-	display: block;
-	margin: 1rem auto;
-	padding: 0;
-	font-size: 0;
-	text-align: center;
-	list-style: none;
-}
-
-.card {
-	display: inline-block;
-	width: 90%;
-	max-width: 20rem;
-	margin: 1rem;
-	font-size: 1rem;
-	text-decoration: none;
-	overflow: hidden;
-	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
-	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-}
-
-.card:hover {
-	transform: translateY(-0.5rem) scale(1.0125);
-	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
-}
-
-.card-description {
-	display: block;
-	padding: 1em 0.5em;
-	color: #515151;
-	text-decoration: none;
-}
-
-.card-description > h2 {
-	margin: 0 0 0.5em;
-}
-
-.card-description > p {
-	margin: 0;
-}
-
-/****************************************Contact*****************************/
-
 
 .circle {
   border-radius: 50%;
@@ -964,10 +972,10 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 2px solid var(--fifth-color);
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  color: var(--fifth-color);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -989,7 +997,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: var(--fifth-color);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -1004,10 +1012,10 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: black;
-  border: 2px solid black;
+  background-color: var(--fourth-color);
+  border: 2px solid var(--fourth-color);
   font-size: 0.95rem;
-  color: white;
+  color: var(--fifth-color);
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -1018,8 +1026,8 @@ textarea.input {
 
 .btn:hover {
   background-color: transparent;
-  color: #fff;
-  border: 2px solid white;
+  color: var(--fifth-color);
+  border: 2px solid var(--fifth-color);
 }
 
 .input-container span {
@@ -1087,13 +1095,13 @@ textarea.input {
 
 
 .text {
-  color: #333;
+  color: var(--fourth-color);
   margin: 1.5rem 0 2rem 0;
 }
 
 .information {
   display: flex;
-  color: #555;
+  color: var(--fourth-color);
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
@@ -1122,7 +1130,7 @@ textarea.input {
   height: 35px;
   border-radius: 5px;
   background: linear-gradient(45deg, var(--main-bg-color), var(--second-color));
-  color: #fff;
+  color: var(--fifth-color);
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
@@ -1131,6 +1139,9 @@ textarea.input {
 
 .social-icons a:hover {
   transform: scale(1.05);
+  color: var(--second-color);
+  background: linear-gradient(45deg, var(--third-color), var(--main-bg-color));
+
 }
 
 .contact-info:before {
@@ -1161,7 +1172,7 @@ textarea.input {
   position: absolute;
   width: 360px;
   height: 360px;
-  background-color: #fafafa;
+  background-color: var(--fifth-color);
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
@@ -1180,7 +1191,7 @@ textarea.input {
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: white;
+  background: var(--fifth-color);
   white-space: nowrap;
   position: relative;
 }
@@ -1197,12 +1208,12 @@ textarea.input {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--fifth-color));
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--fifth-color));
 }
 
 .logos:hover .logos-slide {
