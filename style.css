@@ -223,25 +223,14 @@ footer {
 } 
 
 section .title {
-  position: relative;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding: 0px;
+  font-size: xx-large;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--fourth-color);
 }
 
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 45px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
 
 section .title::after {
   position: absolute;
