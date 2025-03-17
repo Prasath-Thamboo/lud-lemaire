@@ -624,7 +624,6 @@ section .title::after {
   
   .hero-content .description p {
     margin-bottom: 15px;
-    text-align: justify;
     line-height: 1.6;
   }
   
