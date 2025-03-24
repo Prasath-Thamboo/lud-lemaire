@@ -935,7 +935,7 @@ form {
 }
 
 .title-contact {
-  color:var(--main-bg-color);
+  color:var(--second-color);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -960,7 +960,7 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid var(--fifth-color);
+  border: 2px solid var(--second-color);
   background: none;
   padding: 0.6rem 1.2rem;
   color: var(--fifth-color);
@@ -985,7 +985,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: var(--fifth-color);
+  color: var(--fourth-color);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
