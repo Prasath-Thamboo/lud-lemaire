@@ -897,26 +897,6 @@ section .title::after {
   color: var(--second-color)
 }
 
-.circle {
-  border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, var(--second-color));
-  position: absolute;
-}
-
-.circle.one {
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
-}
-
-.circle.two {
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px;
-}
-
 .contact-form:before {
   content: "";
   position: absolute;
@@ -1143,28 +1123,6 @@ textarea.input {
   bottom: -77px;
   right: 50px;
   opacity: 0.3;
-}
-
-.big-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, var(--second-color), var(--main-bg-color));
-  bottom: 60%;
-  right: 50%;
-  transform: translate(-40%, 38%);
-}
-
-.big-circle:after {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  background-color: var(--fifth-color);
-  border-radius: 50%;
-  top: calc(50% - 180px);
-  left: calc(50% - 180px);
 }
 
 .square {
@@ -1630,12 +1588,6 @@ ul {
     height: 350px;
   }
 
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
-
   .text {
     margin: 1rem 0 1.5rem 0;
   }
@@ -1724,12 +1676,7 @@ ul {
   .contact-info:before {
     display: none;
   }
-
-  .square,
-  .big-circle {
-    display: none;
-  }
-
+  
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
