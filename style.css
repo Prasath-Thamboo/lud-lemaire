@@ -497,6 +497,7 @@ section .title::after {
 .home-section .serv-content .left {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .home-section .serv-content .left.items {
@@ -769,10 +770,10 @@ section .title::after {
   background-image: url('img/Renov1.jpg');
   }
   .am-slider[for="a3"] {
-  background-image: url('img/Renov2.webp');
+  background-image: url('img/1.png');
   }
   .am-slider[for="a4"] {
-  background-image: url('img/Renov3.webp');
+  background-image: url('img/18.png');
   }
   .am-slider[for="a5"] {
   background-image: url('img/Renov4.jpg');
