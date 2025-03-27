@@ -1537,9 +1537,11 @@ ul {
   .left{
     gap: 20px;
   }
+  
   .menu-btn {
     display: block;
     z-index: 999;
+    color: var(--second-color);
   }
   
   .menu-btn i.active:before {
