@@ -137,3 +137,22 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // *****************************************Fin ******************************************* //
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionne tous les éléments avec les classes .nav-link, .custom-class1, .custom-class2, et .custom-class3
+    const navLinks = document.querySelectorAll('.menu-btn, .logo, .contaact-btn');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+            const targetId = this.getAttribute('href').substring(1); // Obtient l'ID de la section cible
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' }); // Fait défiler jusqu'à la section cible
+                history.replaceState(null, null, ' '); // Remplace l'état de l'historique sans modifier l'URL
+            }
+        });
+    });
+});
