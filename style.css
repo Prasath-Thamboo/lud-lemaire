@@ -132,7 +132,7 @@ html {
 }
 
 .contact-button-contain a:hover {
-  color: var(--main2-bg-color);
+  color: var(--second-color);
 }
 
 .contact-button-contain a:active{
@@ -180,7 +180,7 @@ html {
   background-color: var(--second-color);
   border-radius: 10px;
   border: none;
-  color : var(--third-color); 
+  color : var(--fifth-color); 
   cursor: pointer;
   width: fit-content;
   transition: all ease .3s;
@@ -190,7 +190,8 @@ html {
 
 .cook .bandeau .band-button button:hover {
   transform: scale(1.05);
-  background-color: var(--main2-bg-color);
+  background-color: var(--third-color);
+  color: var(--fourth-color)
 }
 
 .cook .bandeau .band-button button:active{
@@ -1207,7 +1208,7 @@ ul {
 }
 
 .footer {
-  background: linear-gradient(to right,var(--main2-bg-color) 50%,var(--main-bg-color) 100%);
+  background: var(--fifth-color);
   padding: 70px 0;
 }
 
@@ -1395,11 +1396,7 @@ ul {
   .am-slide{
     width: 100%;
   } 
-   
-
-  
-
- 
+    
 }
 
 @media (max-width: 991px) {
@@ -1492,7 +1489,7 @@ ul {
   }
 
   .am-description p{
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .left{
